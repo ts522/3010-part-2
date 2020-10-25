@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>REGISTRATION</title>
+    <link rel="stylesheet" href="style1.css"/>
+    <link href="./css/style1.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style1.css" >
+    <script type="text/javascript" src="js/rform.js"></script>
+    <script src="https://ajax.googlepis.com/ajax/libs/jquerry/3.3.1/jquerry.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-taarget="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="stone.jpg">Logo</a>
+        </div>
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="Project1.html">home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid text-center">
+    <div class="row content">
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 sidenav">
+            <p><a href="Registration.html"><i class="register"></i>Join</a></p>
+            <p><a href="Animateion.html"><i class="animate"></i> message</a></p>
+        </div>
+
+
+        <div class="col-sm-12 col-md-9 col-lg-9 text-left">
+            <div class="row">
+                <form id="regForm" method="post">
+                <div class="col-sm-12 col-md-5 col-lg-5">
+
+                            <label for="userName">User name:</label><br/>
+                        <input id="userName" type="text" name="userName" maxlength="50"/><br/>
+                            <span id = "userV" class="valid hide">Valid User Name </span>
+                            <span id = "userIV" class="invalid hide">Invalid User Name</span>
+                    <div id= "passwordDiv" class="form-group">
+                        <label for="password">Password:</label><br/>
+                        <input id="password" type="password" name="password" minlength="8" maxlength="50"/><br/>
+                    <span id = "passV" class="valid hide">Valid password </span>
+                    <span id = "passIV" class="invalid hide">Invalid password</span>
+                    </div>
+
+                    <div id= "repeatPasswordDiv" class="form-group">
+                    <label for="repeatPassword">Repeat Password:</label><br/>
+                        <input id="repeatPassword" type="password" name="password" minlength="8" maxlength="50"/><br/>
+                        <span id = "rPassV" class="valid hide">Valid password </span>
+                        <span id = "rPassIV" class="invalid hide">Invalid password</span>
+                    </div>
+
+                    <label for="firstName">First name:</label><br/>
+                        <input id="firstName" type="text" name="firstName" maxlength="50"/><br/>
+                        <span id = "FNV" class="valid hide">Valid</span>
+                        <span id = "FNIV" class="invalid hide">Invalid</span>
+
+                    <label for = "lastName">Last name:</label><br/>
+                        <input type="text" name="lastName" maxlength="50"/>
+                        <span id = "LNV" class="valid hide">Valid</span>
+                        <span id = "LNIV" class="invalid hide">Invalid</span>
+
+                    <label for="addressline1">Address 1:</label><br/>
+                        <input id="addressline1" type="text" name="addressline1" maxlength="100" /><br/>
+                        <span id="alV" class="valid hide">Valid</span>
+                        <span id="alIV" class="invalid hide">Invalid</span>
+
+                    <label for="addressline2">Address 2:</label><br/>
+                        <input id="addressline2" type="text" name="addressline2" maxlength="100"/><br/>
+
+
+                    <label for="city">City:</label><br/>
+                        <input id="city" type="text" name="city" maxlength="50"/><br/>
+                        <span id="CV" class="valid hide">Valid</span>
+                        <span id="CIV" class="invalid hide">Invalid</span>
+
+                    <label for="state-select">Choose a State:</label><br/>
+                        <select name="state" id="state-select">
+                            <option value="">--Please choose an option--</option>
+                            <option value="Alabama">Alabama</option>
+                            <option value="Alaska">Alaska</option>
+                            <option value="Arizona">Arizona</option>
+                            <option value="Arkansas">Arkansas</option>
+                            <option value="California">California</option>
+                            <option value="Colorado">Colorado</option>
+                            <option value="Connecticut">Connecticut</option>
+                            <option value="Delaware">Delaware</option>
+                            <option value="Florida">Florida</option>
+                            <option value="Georgia">Georgia</option>
+                            <option value="Hawaii">Hawaii</option>
+                            <option value="Idaho">Idaho</option>
+                            <option value="Indiana">Indiana</option>
+                            <option value="Iowa">Iowa</option>
+                            <option value="Kansas">Kansas</option>
+                            <option value="Arkansas">Arkansas</option>
+                            <option value="Kentucky">Kentucky</option>
+                            <option value="Louisiana">Louisiana</option>
+                            <option value="Maine">Maine</option>
+                            <option value="Maryland">Maryland</option>
+                            <option value="Massachusetts">Massachusetts</option>
+                            <option value="Michigan">Michigan</option>
+                            <option value="Minnesota">Minnesota</option>
+                            <option value="Mississippi">Mississippi</option>
+                            <option value="Missouri">Missouri</option>
+                            <option value="Montana">Montana</option>
+                            <option value="Nebraska">Nebraska</option>
+                            <option value="Nevada">Nevada</option>
+                            <option value="New Hampshire">New Hampshire</option>
+                            <option value="New Jersey">New Jersey</option>
+                            <option value="New Mexico">New Mexico</option>
+                            <option value="New York">New York</option>
+                            <option value="North Carolina">North Carolina </option>
+                            <option value="North Dakota">North Dakota</option>
+                            <option value="Ohio">Ohio</option>
+                            <option value="Oklahoma">Oklahoma</option>
+                            <option value="Oregon">Oregon</option>
+                            <option value="Pennsylvania">Pennsylvania</option>
+                            <option value="Rhode Island">Rhode Island</option>
+                            <option value="South Carolina">South Carolina</option>
+                            <option value="South Dakota">South Dakota</option>
+                            <option value="Tennessee">Tennessee</option>
+                            <option value="Texas">Texas</option>
+                            <option value="Utah">Utah</option>
+                            <option value="Vermont">Vermont</option>
+                            <option value="Virginia">Virginia</option>
+                            <option value="Washington">Washington</option>
+                            <option value="West Virginia">West Virginia</option>
+                            <option value="Wisconsin">Wisconsin</option>
+                            <option value="Wyoming">Wyoming</option>
+                        </select><br/>
+                        <span id="sV" class="valid hide">Valid</span>
+                        <span id="sIV" class="invalid hide">Valid</span>
+
+                        <label for="zipCode">Zip Code:</label><br/>
+                        <input id="zipCode" type="text" name="zipCode" minlength="5" maxlength="10" size="20"/><br/>
+                        <span id="zipV" class="valid hide">Valid</span>
+                        <span id="zipIV" class="invalid hide">Invalid</span>
+
+                            <label for="pn">Phone Number:</label><br/>
+                        <input id="pn" type="text" name="pn" id="pn"/><br/>
+                        <span id="PV" class="valid hide">Valid</span>
+                        <span id="PIV" class="invalid hide">Invalid</span>
+                    <label for="email">Email:</label><br/>
+                        <input id="email" type="email" name="email"/><br/>
+                            <span id="EIV" class="invalid hide">Invalid</span>
+                            <span id="EV" class="valid hide">Valid</span>
+                    <input type="radio"
+                               name="gender" id="maleGender"
+                               value="male"/> <label for="maleGender">Male</label><br/>
+                        <input type="radio"
+                               name="gender" id="femaleGender"
+                               value="female"/> <label for="femaleGender">Female</label><br/>
+                        <input type="radio"
+                               name="gender" id="otherGender"
+                               value="other"/> <label for="otherGender">Other</label><br/>
+                                <span id = "genderV" class="valid hide">Valid</span>
+                                <span id = "genderIV" class="invalid hide">Valid</span>
+
+                    <input type="radio"
+                               name="maritalStatus" id="singleMS"
+                               value="single"/> <label for="singleMS">Single</label><br/>
+                                <input type="radio"
+                               name="maritalStatus" id="marriedMS"
+                               value="married"/> <label for="marriedMS">Married</label><br/>
+                                <input type="radio"
+                                   name="maritalStatus" id="widowedMS"
+                                   value="widowed"/> <label for="widowedMS">Widowed</label><br/>
+                                <input type="radio" name="maritalStatus" id="divorcedMS"
+                                   value="divorced"/> <label for="divorcedMS">Divorced</label><br/>
+                            <input type="radio"
+                                   name="maritalStatus" id="separatedMS"
+                                   value="separated"/> <label for="separatedMS">Separated</label>
+                            <br/>
+                            <span id= "msv" class="valid hide">Valid</span>
+                            <span id= "msiv" class="invalid">Invalid</span>
+
+                    <label for="birthDay">Date of birth:</label><br/>
+                            <input id="birthDay" type="date" name="birthDay"/><br/>
+                            <span id="bv" class="valid">Valid</span>
+                            <span id="biv" class="invalid">Invalid</span>
+                            <input type="submit" id="submit" value="submit" disabled="disabled"/>
+                            <span id="submitReady" class="valid hide">All Sections Are Filled Out</span>
+                            <input type="reset" value="Reset Data"/>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
